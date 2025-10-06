@@ -45,6 +45,18 @@
                                 Register
                             </a>
                         @endif
+
+                        {{-- 🌟 Nút đăng nhập bằng Google --}}
+            <a
+                href="{{ route('google.redirect') }}"
+                class="inline-flex items-center gap-2 px-4 py-1.5 border border-[#db4437] text-[#db4437] hover:bg-[#db4437] hover:text-white rounded-sm text-sm leading-normal transition duration-200"
+            >
+                {{-- Icon Google --}}
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512" class="w-4 h-4 fill-current">
+                    <path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.4 64.9l-67.5 64.9C313.1 107.7 282.4 96 248 96 150.5 96 72 174.5 72 272s78.5 176 176 176c89.1 0 146.8-51.2 153.7-122.5H248v-98.4h240v34.7z"/>
+                </svg>
+                Sign in with Google
+            </a>
                     @endauth
                 </nav>
             @endif
